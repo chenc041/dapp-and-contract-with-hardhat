@@ -1,0 +1,26 @@
+{
+  "name": "contract-with-hardhat-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenc041/contract-with-hardhat-template.git"
+  },
+  "author": {
+    "email": "double_cl@163.com",
+    "name": "chenc"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenc041/contract-with-hardhat-template/issues"
+  },
+  "homepage": "https://github.com/chenc041/contract-with-hardhat-template#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.11.2"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "hello-webpack",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "chenc",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.dev.conf.ts",
+    "build": "pnpm run clean && cross-env NODE_ENV=production webpack --config config/webpack.prod.conf.ts",
+    "analyzer": "cross-env ANALYZER=true webpack --config config/webpack.prod.conf.ts",
+    "clean": "rimraf ./dist",
+    "prebuild": "pnpm run clean",
+    "lint-staged": "lint-staged",
+    "lint-staged:tsx": "tsc --noEmit && eslint --fix 'src/**/**/*.{js,ts,tsx}'",
+    "prettier": "prettier --write src/**/**/*.tsx"
+  },
+  "browserslist": [
+    "cover 99.5% in CN"
+  ],
+  "dependencies": {
+    "axios": "^1.0.0",
+    "core-js": "^3.25.2",
+    "postcss": "^8.4.16",
+    "postcss-loader": "^7.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.4.0",
+    "redux": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/runtime": "^7.19.0",
+    "@types/html-webpack-plugin": "^3.2.6",
+    "@types/node": "^18.7.18",
+    "@types/react": "^18.0.20",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-helmet": "^6.1.5",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-bundle-analyzer": "^4.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "cssnano": "^5.1.13",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "mini-css-extract-plugin": "^2.6.1",
+    "prettier": "^2.7.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.12.0",
+    "stylelint-config-recommended": "^9.0.0",
+    "terser-webpack-plugin": "^5.3.6",
+    "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.74.0",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "lint-staged": {
+    "src/**/**/*.tsx": [
+      "prettier --write",
+      "git add"
+    ],
+    "**/**/*.tsx": [
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.tsx": "npm run lint-staged:tsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  }
+}
