@@ -32,7 +32,8 @@
   },
   "include": [
     "./src",
-    "./global.d.ts"
+    "./global.d.ts",
+    "./extendWindow.d.ts"
   ],
   "exclude": ["node_modules", "dist"]
 }
