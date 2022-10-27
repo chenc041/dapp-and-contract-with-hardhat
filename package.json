@@ -1,10 +1,13 @@
 {
-  "name": "contract-with-hardhat-template",
+  "name": "contract-with-hardhat",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "publish:test": "npx hardhat --network goerli run scripts/deploy.ts",
+    "publish:prod": "npx hardhat --network mainnet run scripts/deploy.ts",
+    "publish:local": "npx hardhat --network localhost"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
     "hardhat": "^2.11.2"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.7.3"
+    "@openzeppelin/contracts": "^4.7.3",
+    "dotenv": "^16.0.3"
   }
 }
