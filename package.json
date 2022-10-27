@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenc041/contract-with-hardhat-template.git"
+    "url": "git+https://github.com/chenc041/contract-with-hardhat.git"
   },
   "author": {
     "email": "double_cl@163.com",
