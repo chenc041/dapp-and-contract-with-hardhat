@@ -24,7 +24,7 @@
   "homepage": "https://github.com/chenc041/contract-with-hardhat#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
-    "hardhat": "^2.11.2"
+    "hardhat": "^2.12.1"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
