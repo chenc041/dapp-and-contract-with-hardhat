@@ -7,7 +7,6 @@ const { API_URL, PRIVATE_KEY, TEST_API_URL, TEST_PRIVATE_KEY  } = process.env;
 
 const config: HardhatUserConfig = {
   solidity: "0.8.17",
-  defaultNetwork: "goerli",
   networks: {
     hardhat: {},
     goerli: {
