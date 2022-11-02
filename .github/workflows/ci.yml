@@ -27,3 +27,19 @@ jobs:
 
       - name: run test
         run: npm run test
+  coverage:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16, 18 ]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v3
+      - name: install dep
+        run: npm i
+      - run: npm run coverage
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+      - uses: codecov/codecov-action@v3
