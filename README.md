@@ -1,4 +1,4 @@
-# A template for contract and DApp with Hardhat
+# A template for contract and dapp with Hardhat
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
