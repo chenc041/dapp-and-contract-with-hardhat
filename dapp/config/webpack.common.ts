@@ -1,8 +1,8 @@
-import path from 'node:path';
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as path from 'node:path';
+import * as webpack from 'webpack';
 import 'webpack-dev-server';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 export const config: webpack.Configuration = {
   entry: path.resolve(__dirname, '../src/index'),
@@ -58,6 +58,15 @@ export const config: webpack.Configuration = {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
       '~': path.resolve('src'),
+    },
+    fallback: {
+      zlib: require.resolve('browserify-zlib'),
+      stream: require.resolve('stream-browserify'),
+      crypto: require.resolve('crypto-browserify'),
+      http: require.resolve('stream-http'),
+      https: require.resolve('https-browserify'),
+      url: require.resolve('url/'),
+      assert: require.resolve('assert'),
     },
   },
   plugins: [
