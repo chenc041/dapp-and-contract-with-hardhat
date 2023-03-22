@@ -3,7 +3,7 @@ import React from 'react';
 
 export interface RoutesType {
   title: string;
-  pathname: string;
+  path: string;
   keywords?: string;
   description?: string;
   component: React.ReactNode;
@@ -11,8 +11,10 @@ export interface RoutesType {
 
 export const routes: RoutesType[] = [
   {
+    path: '/',
     title: 'Home',
-    pathname: '/',
     component: <Home />,
+    keywords: 'test keyword',
+    description: 'description',
   },
 ];

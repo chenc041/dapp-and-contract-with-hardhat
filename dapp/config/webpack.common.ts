@@ -1,8 +1,8 @@
-import * as path from 'node:path';
-import * as webpack from 'webpack';
+import path from 'node:path';
+import webpack from 'webpack';
 import 'webpack-dev-server';
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export const config: webpack.Configuration = {
   entry: path.resolve(__dirname, '../src/index'),

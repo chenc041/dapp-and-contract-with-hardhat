@@ -1,6 +1,6 @@
 import * as webpack from 'webpack';
 import { merge } from 'webpack-merge';
-import * as TerserPlugin from 'terser-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 import { config } from './webpack.common';
 
 export default merge(config, {

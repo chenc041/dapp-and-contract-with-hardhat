@@ -1,34 +1,38 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { routes } from '~/routes';
 import { Helmet } from 'react-helmet';
 import { GlobalContext } from '~/context';
+import { BasicLayout } from '~/layout/basicLayout';
+
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <BasicLayout />,
+    children: routes.map(({ path, title, component, description, keywords }) => {
+      return {
+        path: path,
+        element: (
+          <>
+            <Helmet>
+              <title>{title}</title>
+              <meta name="description" content={description} />
+              <meta name="keywords" content={keywords} />
+            </Helmet>
+            {component}
+          </>
+        ),
+      };
+    }),
+  },
+]);
+
 const App = () => {
   const [appName, setAppName] = React.useState('demo');
 
   return (
     <GlobalContext.Provider value={{ appName, setAppName }}>
-      <BrowserRouter>
-        <Routes>
-          {routes.map((item) => {
-            const { pathname, component } = item;
-            return (
-              <Route
-                key={pathname}
-                path={pathname}
-                element={
-                  <>
-                    <Helmet>
-                      <title>{item.title}</title>
-                    </Helmet>
-                    {component}
-                  </>
-                }
-              />
-            );
-          })}
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={router} />
     </GlobalContext.Provider>
   );
 };
