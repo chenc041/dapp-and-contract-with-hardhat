@@ -19,6 +19,8 @@
 Try running some of the following tasks:
 
 
+
+### for contract
 ```shell
 # for dev
 npm run test
@@ -36,4 +38,13 @@ npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.ts
+```
+
+### for DApp
+```shell
+# cd DApp
+npm run dev
+npm run build
+npm run analyzer
+npm run prettier
 ```

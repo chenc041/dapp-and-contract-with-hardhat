@@ -1,17 +1,20 @@
 import { Home } from '~/pages/home';
+import React from 'react';
 
 export interface RoutesType {
   title: string;
-  pathname: string;
+  path: string;
   keywords?: string;
   description?: string;
-  component: () => JSX.Element;
+  component: React.ReactNode;
 }
 
 export const routes: RoutesType[] = [
   {
+    path: '/',
     title: 'Home',
-    pathname: '/',
-    component: Home,
+    component: <Home />,
+    keywords: 'test keyword',
+    description: 'description',
   },
 ];
