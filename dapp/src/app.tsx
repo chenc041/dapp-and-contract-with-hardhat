@@ -1,11 +1,11 @@
 import React from 'react';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { routes } from '~/routes';
 import { Helmet } from 'react-helmet';
 import { GlobalContext } from '~/context';
 import { BasicLayout } from '~/layout/basicLayout';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <BasicLayout />,
