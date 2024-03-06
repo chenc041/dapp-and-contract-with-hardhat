@@ -60,7 +60,7 @@ devDependencies:
     version: 18.0.11
   '@types/react-helmet':
     specifier: ^6.1.6
-    version: 6.1.6
+    version: 6.1.11
   '@types/webpack':
     specifier: ^5.0.0
     version: 5.0.0(webpack-cli@5.0.1)
@@ -1829,8 +1829,8 @@ packages:
       '@types/react': 18.0.28
     dev: true
 
-  /@types/react-helmet@6.1.6:
-    resolution: {integrity: sha512-ZKcoOdW/Tg+kiUbkFCBtvDw0k3nD4HJ/h/B9yWxN4uDO8OkRksWTO+EL+z/Qu3aHTeTll3Ro0Cc/8UhwBCMG5A==}
+  /@types/react-helmet@6.1.11:
+    resolution: {integrity: sha512-0QcdGLddTERotCXo3VFlUSWO3ztraw8nZ6e3zJSgG7apwV5xt+pJUS8ewPBqT4NYB1optGLprNQzFleIY84u/g==}
     dependencies:
       '@types/react': 18.0.28
     dev: true
