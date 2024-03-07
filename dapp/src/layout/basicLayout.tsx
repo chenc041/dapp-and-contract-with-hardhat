@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 export const BasicLayout = () => {
   return (
-    <div>
+    <div className='text-3xl font-bold underline'>
       <Outlet />
     </div>
   );

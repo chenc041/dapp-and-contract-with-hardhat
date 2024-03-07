@@ -4,6 +4,7 @@ import { routes } from '~/routes';
 import { Helmet } from 'react-helmet';
 import { GlobalContext } from '~/context';
 import { BasicLayout } from '~/layout/basicLayout';
+import '~/global.scss'
 
 const router = createBrowserRouter([
   {

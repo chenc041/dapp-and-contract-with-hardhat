@@ -4,5 +4,6 @@ module.exports = {
       preset: 'default',
     }),
     require('autoprefixer'),
+    require('tailwindcss'),
   ],
 };
