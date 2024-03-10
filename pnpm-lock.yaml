@@ -13,6 +13,12 @@ dependencies:
     version: 16.4.5
 
 devDependencies:
+  '@nomicfoundation/hardhat-chai-matchers':
+    specifier: ^2.0.6
+    version: 2.0.6(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.4.1)(ethers@6.11.1)(hardhat@2.21.0)
+  '@nomicfoundation/hardhat-network-helpers':
+    specifier: ^1.0.10
+    version: 1.0.10(hardhat@2.21.0)
   '@nomicfoundation/hardhat-toolbox':
     specifier: ^4.0.0
     version: 4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.6)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.4)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.12)(@types/mocha@10.0.6)(@types/node@20.11.25)(chai@4.4.1)(ethers@6.11.1)(hardhat-gas-reporter@1.0.10)(hardhat@2.21.0)(solidity-coverage@0.8.10)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.4.2)
@@ -3457,7 +3463,7 @@ packages:
     dev: true
 
   /strip-ansi@4.0.0:
-    resolution: {integrity: sha1-qEeQIusaw2iocTibY1JixQXuNo8=}
+    resolution: {integrity: sha512-4XaJ2zQdCzROZDivEVIDPkcQn8LMFSa8kj8Gxb/Lnwzv9A8VctNZ+lfivC/sV3ivW8ElJTERXZoPBRrZKkNKow==}
     engines: {node: '>=4'}
     dependencies:
       ansi-regex: 3.0.1
