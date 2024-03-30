@@ -40,7 +40,7 @@ dependencies:
     version: 2.8.11(typescript@5.4.2)
   wagmi:
     specifier: ^2.5.7
-    version: 2.5.13(@tanstack/react-query@5.28.9)(@types/react@18.2.73)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11)
+    version: 2.5.16(@tanstack/react-query@5.28.9)(@types/react@18.2.73)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11)
 
 devDependencies:
   '@babel/core':
@@ -1650,7 +1650,7 @@ packages:
       '@babel/runtime': 7.24.1
       '@emotion/hash': 0.9.1
       '@emotion/memoize': 0.8.1
-      '@emotion/serialize': 1.1.3
+      '@emotion/serialize': 1.1.4
       babel-plugin-macros: 3.1.0
       convert-source-map: 1.9.0
       escape-string-regexp: 4.0.0
@@ -1695,7 +1695,7 @@ packages:
       '@babel/runtime': 7.24.1
       '@emotion/babel-plugin': 11.11.0
       '@emotion/cache': 11.11.0
-      '@emotion/serialize': 1.1.3
+      '@emotion/serialize': 1.1.4
       '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
       '@emotion/utils': 1.2.1
       '@emotion/weak-memoize': 0.3.1
@@ -1704,8 +1704,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@emotion/serialize@1.1.3:
-    resolution: {integrity: sha512-iD4D6QVZFDhcbH0RAG1uVu1CwVLMWUkCvAqqlewO/rxf8+87yIBAlt4+AxMiiKPLs5hFc0owNk/sLLAOROw3cA==}
+  /@emotion/serialize@1.1.4:
+    resolution: {integrity: sha512-RIN04MBT8g+FnDwgvIUi8czvr1LU1alUMI05LekWB5DGyTm8cCBMCRpq3GqaiyEDRptEXOyXnvZ58GZYu4kBxQ==}
     dependencies:
       '@emotion/hash': 0.9.1
       '@emotion/memoize': 0.8.1
@@ -1718,8 +1718,8 @@ packages:
     resolution: {integrity: sha512-0QBtGvaqtWi+nx6doRwDdBIzhNdZrXUppvTM4dtZZWEGTXL/XE/yJxLMGlDT1Gt+UHH5IX1n+jkXyytE/av7OA==}
     dev: false
 
-  /@emotion/styled@11.11.0(@emotion/react@11.11.4)(@types/react@18.2.73)(react@18.2.0):
-    resolution: {integrity: sha512-hM5Nnvu9P3midq5aaXj4I+lnSfNi7Pmd4EWk1fOZ3pxookaQTNew6bp4JaCBYM4HVFZF9g7UjJmsUmC2JlxOng==}
+  /@emotion/styled@11.11.5(@emotion/react@11.11.4)(@types/react@18.2.73)(react@18.2.0):
+    resolution: {integrity: sha512-/ZjjnaNKvuMPxcIiUkf/9SHoG4Q196DRl1w82hQ3WCsjo1IUR8uaGWrC6a87CrYAW0Kb/pK7hk8BnLgLRi9KoQ==}
     peerDependencies:
       '@emotion/react': ^11.0.0-rc.0
       '@types/react': '*'
@@ -1732,7 +1732,7 @@ packages:
       '@emotion/babel-plugin': 11.11.0
       '@emotion/is-prop-valid': 1.2.2
       '@emotion/react': 11.11.4(@types/react@18.2.73)(react@18.2.0)
-      '@emotion/serialize': 1.1.3
+      '@emotion/serialize': 1.1.4
       '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
       '@emotion/utils': 1.2.1
       '@types/react': 18.2.73
@@ -2094,7 +2094,7 @@ packages:
     resolution: {integrity: sha512-emT8HKbnfVwGhPxyUfMja6DWzvtJvDEBQxqCVx93H0HsyrrOzOC43iGCAosslw6o5h7gOfRKLqWmK8V7jQAS2Q==}
     dependencies:
       '@emotion/react': 11.11.4(@types/react@18.2.73)(react@18.2.0)
-      '@emotion/styled': 11.11.0(@emotion/react@11.11.4)(@types/react@18.2.73)(react@18.2.0)
+      '@emotion/styled': 11.11.5(@emotion/react@11.11.4)(@types/react@18.2.73)(react@18.2.0)
       i18next: 22.5.1
       qr-code-styling: 1.6.0-rc.1
       react: 18.2.0
@@ -2130,7 +2130,7 @@ packages:
       eventemitter2: 6.4.9
       extension-port-stream: 2.1.1
       i18next: 22.5.1
-      i18next-browser-languagedetector: 7.2.0
+      i18next-browser-languagedetector: 7.2.1
       obj-multiplex: 1.0.0
       pump: 3.0.0
       qrcode-terminal-nooctal: 0.12.1
@@ -3204,6 +3204,12 @@ packages:
     dependencies:
       undici-types: 5.26.5
 
+  /@types/node@20.12.2:
+    resolution: {integrity: sha512-zQ0NYO87hyN6Xrclcqp7f8ZbXNbRfoGWNcMvHTPQp9UUrwI0mI7XBz+cu7/W6/VClYo2g63B0cjull/srU7LgQ==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: false
+
   /@types/parse-json@4.0.2:
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
     dev: false
@@ -3499,10 +3505,10 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@wagmi/connectors@4.1.19(@types/react@18.2.73)(@wagmi/core@2.6.10)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11):
-    resolution: {integrity: sha512-7OmdvepGCmzjGlY+pT7SgItgDd+eo7J2q50PywtnZ8xIdIEJUiwDm37izwQH0S7ZH8EL/9XkmOuz9hV5ORwn8Q==}
+  /@wagmi/connectors@4.1.22(@types/react@18.2.73)(@wagmi/core@2.6.13)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11):
+    resolution: {integrity: sha512-9t14G28awyeWTjGS/OfEd/DhdeX5t4Pio3SJHw4M4aTexIfN5DHGmmtfUtSu6DP1r+LD2vSI4ShT7vH0dgtZwA==}
     peerDependencies:
-      '@wagmi/core': 2.6.10
+      '@wagmi/core': 2.6.13
       typescript: '>=5.0.4'
       viem: 2.x
     peerDependenciesMeta:
@@ -3513,7 +3519,7 @@ packages:
       '@metamask/sdk': 0.14.3(@types/react@18.2.73)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)
       '@safe-global/safe-apps-provider': 0.18.1(typescript@5.4.2)
       '@safe-global/safe-apps-sdk': 8.1.0(typescript@5.4.2)
-      '@wagmi/core': 2.6.10(@types/react@18.2.73)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11)
+      '@wagmi/core': 2.6.13(@types/react@18.2.73)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11)
       '@walletconnect/ethereum-provider': 2.11.2(@types/react@18.2.73)(react@18.2.0)
       '@walletconnect/modal': 2.6.2(@types/react@18.2.73)(react@18.2.0)
       typescript: 5.4.2
@@ -3545,8 +3551,8 @@ packages:
       - zod
     dev: false
 
-  /@wagmi/core@2.6.10(@types/react@18.2.73)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11):
-    resolution: {integrity: sha512-CwY6T5MZgvhahNltArxVUpeh9Fk+zPeumqXyA+MIB0bdudOaxw0BjHyUOWGwcE8BH+uzT8YuTigeFVW3sKecVg==}
+  /@wagmi/core@2.6.13(@types/react@18.2.73)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11):
+    resolution: {integrity: sha512-RZQ0mBXMH5oe7uvFkNh0e/gPWWLsbkDv/6/SeTY2H7fsH4I/T62ID6eNYUtyOoz7FgQTdAyPdSEt9lst1ZXxkQ==}
     peerDependencies:
       '@tanstack/query-core': '>=5.0.0'
       typescript: '>=5.0.4'
@@ -5116,8 +5122,8 @@ packages:
   /convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
-  /cookie-es@1.0.0:
-    resolution: {integrity: sha512-mWYvfOLrfEc996hlKcdABeIiPHUPC6DM2QYZdGGOvhOTbA3tjm2eBwqlJpoFdjC89NI4Qt6h0Pu06Mp+1Pj5OQ==}
+  /cookie-es@1.1.0:
+    resolution: {integrity: sha512-L2rLOcK0wzWSfSDA33YR+PUHDG10a8px7rUHKWbGLP4YfbsMed2KFUw5fczvDPbT98DDe3LEzviswl810apTEw==}
     dev: false
 
   /cookie-signature@1.0.6:
@@ -6813,7 +6819,7 @@ packages:
   /h3@1.11.1:
     resolution: {integrity: sha512-AbaH6IDnZN6nmbnJOH72y3c5Wwh9P97soSVdGSBbcDACRdkC0FEWf25pzx4f/NuOCK6quHmW18yF2Wx+G4Zi1A==}
     dependencies:
-      cookie-es: 1.0.0
+      cookie-es: 1.1.0
       crossws: 0.2.4
       defu: 6.1.4
       destr: 2.0.3
@@ -7089,8 +7095,8 @@ packages:
     hasBin: true
     dev: true
 
-  /i18next-browser-languagedetector@7.2.0:
-    resolution: {integrity: sha512-U00DbDtFIYD3wkWsr2aVGfXGAj2TgnELzOX9qv8bT0aJtvPV9CRO77h+vgmHFBMe7LAxdwvT/7VkCWGya6L3tA==}
+  /i18next-browser-languagedetector@7.2.1:
+    resolution: {integrity: sha512-h/pM34bcH6tbz8WgGXcmWauNpQupCGr25XPp9cZwZInR9XHSjIFDYp1SIok7zSPsTOMxdvuLyu86V+g2Kycnfw==}
     dependencies:
       '@babel/runtime': 7.24.1
     dev: false
@@ -11650,8 +11656,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /wagmi@2.5.13(@tanstack/react-query@5.28.9)(@types/react@18.2.73)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11):
-    resolution: {integrity: sha512-0+38DUGfLqwrzYx9Aza5ed+v2pO1qKN04egrcICaH4ff1N0Nj3iGlPBZ7HHyu+20r8qEKXIkW//6TPQMlc64YQ==}
+  /wagmi@2.5.16(@tanstack/react-query@5.28.9)(@types/react@18.2.73)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11):
+    resolution: {integrity: sha512-nVSx65kGYcjvELJKoe+l1E78zHqtYwfg0nf2HuZkt1gVvqguo+hIQe534hSf1m+ivdtb0MPlwNCvj6K4QJ7FTw==}
     peerDependencies:
       '@tanstack/react-query': '>=5.0.0'
       react: '>=18'
@@ -11662,8 +11668,8 @@ packages:
         optional: true
     dependencies:
       '@tanstack/react-query': 5.28.9(react@18.2.0)
-      '@wagmi/connectors': 4.1.19(@types/react@18.2.73)(@wagmi/core@2.6.10)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11)
-      '@wagmi/core': 2.6.10(@types/react@18.2.73)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11)
+      '@wagmi/connectors': 4.1.22(@types/react@18.2.73)(@wagmi/core@2.6.13)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11)
+      '@wagmi/core': 2.6.13(@types/react@18.2.73)(react@18.2.0)(typescript@5.4.2)(viem@2.8.11)
       react: 18.2.0
       typescript: 5.4.2
       use-sync-external-store: 1.2.0(react@18.2.0)
