@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/chenc041/contract-with-hardhat#readme",
   "devDependencies": {
-    "@nomicfoundation/hardhat-chai-matchers": "^2.0.6",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.3",
